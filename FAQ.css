@@ -1,0 +1,13 @@
+	body{
+    Width: 500px;
+    text-align: center;
+    margin: auto;
+}
+
+	dd{
+		margin: 0;
+	}
+
+	dt{cursor: pointer;font-weight: bold;font-size: 25px;line-height: 2em;background: #E3E3E3;border-bottom: 2px solid #C5C5C5;border-top: 2px solid white;}
+
+	dl{}

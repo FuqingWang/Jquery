@@ -1,0 +1,44 @@
+<html>
+<head>
+	<tltle></tltle>
+	<link rel="stylesheet" href="FAQ.css">
+
+</head>
+<body>
+<dl>
+	<dt>How may I help?</dt>
+	<dd>I want a dozen of tacos!</dd>
+	<dt>How may I help?</dt>
+	<dd>I want a dozen of tacos!</dd>
+	<dt>How may I help?</dt>
+	<dd>I want a dozen of tacos!</dd>
+	<dt>How may I help?</dt>
+	<dd>I want a dozen of tacos!</dd>
+	<dt>How may I help?</dt>
+	<dd>I want a dozen of tacos!</dd>
+</dl>
+
+<script src = "jquery-3.1.1.js"></script>
+<script type="text/javascript">
+
+$('p').addClass('em');
+
+$(document).ready(function(){
+
+	$('dd').filter(':nth-child(n+4)').hide();
+	$('dl').on('click', 'dt', function(){
+		$(this)
+			.next()
+				.show()
+				.siblings('dd')
+					.hide();
+
+	});
+
+});
+
+
+</script>
+
+</body>
+</html>
